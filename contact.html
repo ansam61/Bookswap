@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>تواصل - BookSwap</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="brand"><div class="logo">BS</div><div><div style="font-weight:700">BookSwap</div></div></div>
+    <nav><a href="index.html">الرئيسية</a><a href="how.html">كيف يعمل</a><a href="library.html">المكتبة</a><a href="add.html">أضف كتاب</a></nav>
+  </header>
+
+  <section>
+    <h2>تواصل معنا</h2>
+    <form onsubmit="event.preventDefault(); toast('تم إرسال الرسالة — شكراً لك'); this.reset();">
+      <div class="form-row">
+        <div style="flex:1"><label>الاسم</label><input class="input" required></div>
+        <div style="flex:1"><label>البريد الإلكتروني</label><input class="input" type="email" required></div>
+      </div>
+      <div style="margin-top:10px"><label>الرسالة</label><textarea class="input" rows="4" required></textarea></div>
+      <div style="margin-top:10px"><button class="btn">إرسال</button></div>
+    </form>
+  </section>
+
+  <div class="footer"> 2025 by Ansam</div>
+</div>
+</body>
+</html>

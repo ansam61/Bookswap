@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>أضف كتاب - BookSwap</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="brand"><div class="logo">BS</div><div><div style="font-weight:700">BookSwap</div><div class="small">تبادل الكتب</div></div></div>
+    <nav><a href="index.html">الرئيسية</a><a href="how.html">كيف يعمل</a><a href="library.html">المكتبة</a><a href="add.html">أضف كتاب</a></nav>
+  </header>
+
+  <section style="margin-top:12px">
+    <h2>أضف كتابك للمشاركة</h2>
+    <form id="addForm" style="margin-top:12px">
+      <div class="form-row">
+        <div style="flex:1">
+          <label>عنوان الكتاب</label>
+          <input name="title" class="input" required/>
+        </div>
+        <div style="flex:1">
+          <label>المؤلف</label>
+          <input name="author" class="input" required/>
+        </div>
+      </div>
+      <div style="margin-top:10px">
+        <label>الفئة</label>
+        <input name="category" class="input"/>
+      </div>
+      <div style="margin-top:10px">
+        <label>حالة الكتاب (مثال: جديد، جيد، مقروء)</label>
+        <input name="condition" class="input"/>
+      </div>
+      <div style="margin-top:10px">
+        <label>رابط صورة الغلاف (أو اتركه فارغًا لاستخدام افتراضي)</label>
+        <input name="cover" class="input" placeholder="assets/images/cover1.svg"/>
+      </div>
+      <div style="margin-top:10px">
+        <label>وصف قصير</label>
+        <textarea name="desc" rows="4" class="input"></textarea>
+      </div>
+
+      <div style="margin-top:12px;display:flex;gap:8px">
+        <button class="btn" type="submit">نشر الكتاب</button>
+        <a href="library.html" class="btn secondary" style="text-decoration:none">عرض المكتبة</a>
+      </div>
+    </form>
+  </section>
+
+  <div class="footer"> 2025 by Ansam</div>
+</div>
+
+
+<div id="modal" style="display:none;position:fixed;inset:0;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#fff;border-radius:12px;padding:18px;max-width:720px;width:100%;box-shadow:0 20px 50px rgba(0,0,0,0.3)">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3 class="modal-title">تفاصيل الكتاب</h3>
+      <button id="modalClose" class="btn secondary">إغلاق</button>
+    </div>
+    <div class="modal-body" style="margin-top:12px"></div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
