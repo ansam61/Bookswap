@@ -53,7 +53,7 @@
   <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert">
     <div class="d-flex">
       <div class="toast-body">
-        ✅ تم تسجيل الدخول بنجاح، سيتم نقلك الآن...
+        تم تسجيل الدخول بنجاح، سيتم نقلك الآن...
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@ $("#loginForm").on("submit", function(e){
     let toast = new bootstrap.Toast(document.getElementById("successToast"));
     toast.show();
     setTimeout(() => {
-      window.location.href = "index.html";
+      window.location.href = "home.html";
     }, 2000);
   }
 });
